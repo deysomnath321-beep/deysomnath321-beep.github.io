@@ -1,9 +1,75 @@
-<html>
-  <body>
-    <h2>My Apps</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Apps & Privacy Policies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+    h1 {
+      color: #1a73e8;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .app-card {
+      background: #f8f9fa;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .app-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #1a73e8;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #1557b0;
+    }
+  </style>
+</head>
+<body>
 
-    <p><a href="/calculator/">Calculator App</a></p>
-    <p><a href="/health-directory/">Health Directory App</a></p>
+  <h1>My Apps & Privacy Policies</h1>
 
-  </body>
+  <div class="app-card">
+    <span class="app-title">Calculator App</span>
+    <a class="btn" href="./calculator/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">Health Directory App</span>
+    <a class="btn" href="./health-directory/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">Alarm App</span>
+    <a class="btn" href="./alarm/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">PDF Maker App</span>
+    <a class="btn" href="./pdf-maker/">View Page</a>
+  </div>
+
+</body>
 </html>
