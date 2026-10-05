@@ -14,11 +14,18 @@
       margin: 40px auto;
       padding: 0 20px;
       color: #333;
+      background-color: #ffffff;
     }
 
     h1 {
       color: #1a73e8;
       text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
       margin-bottom: 30px;
     }
 
@@ -31,11 +38,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 15px;
     }
 
     .app-title {
       font-size: 18px;
       font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -47,17 +61,59 @@
       border-radius: 5px;
       font-size: 14px;
       font-weight: bold;
+      white-space: nowrap;
     }
 
     .btn:hover {
       background-color: #1557b0;
     }
 
+    .privacy-btn {
+      background-color: #34a853;
+    }
+
+    .privacy-btn:hover {
+      background-color: #188038;
+    }
+
+    .upcoming {
+      background-color: #fff8e1;
+      border-color: #f1c40f;
+    }
+
+    .upcoming-badge {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 8px;
+      background-color: #f1c40f;
+      color: #333;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+
+    .disabled-btn {
+      background-color: #999;
+      cursor: default;
+    }
+
+    .disabled-btn:hover {
+      background-color: #999;
+    }
+
     @media (max-width: 600px) {
+      body {
+        margin: 25px auto;
+      }
+
       .app-card {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+      }
+
+      .buttons {
+        width: 100%;
       }
 
       .btn {
@@ -71,45 +127,247 @@
 
   <h1>My Apps & Privacy Policies</h1>
 
+  <p class="subtitle">
+    Explore my Android apps and their privacy policies.
+  </p>
+
+
+  <!-- 1. MY CALCULATOR -->
   <div class="app-card">
-    <span class="app-title">Calculator App</span>
-    <a class="btn" href="./calculator/">View Page</a>
+
+    <span class="app-title">
+      MY CALCULATOR
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.mycalculator"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./calculator/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 2. ALARM -->
   <div class="app-card">
-    <span class="app-title">Health Directory App</span>
-    <a class="btn" href="./health-directory/">View Page</a>
+
+    <span class="app-title">
+      ALARM
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.alam"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./alarm/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 3. HEALTH DIRECTORY -->
   <div class="app-card">
-    <span class="app-title">Alarm App</span>
-    <a class="btn" href="./alarm/">View Page</a>
+
+    <span class="app-title">
+      HEALTH DIRECTORY
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.healthdirectory"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./health-directory/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 4. PDF MAKER -->
   <div class="app-card">
-    <span class="app-title">PDF Maker App</span>
-    <a class="btn" href="./pdf-maker/">View Page</a>
+
+    <span class="app-title">
+      PDF Maker
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.pdfmaker"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./pdf-maker/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 5. IMAGE COMPRESSOR & RESIZER -->
   <div class="app-card">
-    <span class="app-title">Image Compressor & Resizer</span>
-    <a class="btn" href="./image-compressor/">View Page</a>
+
+    <span class="app-title">
+      Image Compressor &amp; Resizer
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.imagecompressor"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./image-compressor/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 6. AI BACKGROUND REMOVER -->
   <div class="app-card">
-    <span class="app-title">QR & Barcode Toolkit</span>
-    <a class="btn" href="./qr-barcode-toolkit/">View Page</a>
+
+    <span class="app-title">
+      AI Background Remover
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.backgroundremover"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./ai-background-remover/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
+
+  <!-- 7. QR & BARCODE TOOLKIT -->
   <div class="app-card">
-    <span class="app-title">AI Photo Enhancer</span>
-    <a class="btn" href="./ai-photo-enhancer/">View Page</a>
+
+    <span class="app-title">
+      QR &amp; Barcode Toolkit
+    </span>
+
+    <div class="buttons">
+
+      <a
+        class="btn"
+        href="https://play.google.com/store/apps/details?id=com.somnath.qrbarcodetoolkit"
+        target="_blank"
+        rel="noopener noreferrer">
+        Google Play
+      </a>
+
+      <a
+        class="btn privacy-btn"
+        href="./qr-barcode-toolkit/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
 
-  <div class="app-card">
-    <span class="app-title">AI Background Remover</span>
-    <a class="btn" href="./ai-background-remover/">View Page</a>
+
+  <!-- 8. UPCOMING APP -->
+  <div class="app-card upcoming">
+
+    <span class="app-title">
+      AI Photo Enhancer
+      <span class="upcoming-badge">UPCOMING</span>
+    </span>
+
+    <div class="buttons">
+
+      <span class="btn disabled-btn">
+        Coming Soon
+      </span>
+
+      <a
+        class="btn privacy-btn"
+        href="./ai-photo-enhancer/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+    </div>
+
   </div>
+
 
 </body>
 </html>
