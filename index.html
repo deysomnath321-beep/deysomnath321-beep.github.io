@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>My Apps & Privacy Policies</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,11 +15,13 @@
       padding: 0 20px;
       color: #333;
     }
+
     h1 {
       color: #1a73e8;
       text-align: center;
       margin-bottom: 30px;
     }
+
     .app-card {
       background: #f8f9fa;
       border: 1px solid #e0e0e0;
@@ -28,10 +32,12 @@
       justify-content: space-between;
       align-items: center;
     }
+
     .app-title {
       font-size: 18px;
       font-weight: bold;
     }
+
     .btn {
       display: inline-block;
       padding: 8px 16px;
@@ -42,11 +48,25 @@
       font-size: 14px;
       font-weight: bold;
     }
+
     .btn:hover {
       background-color: #1557b0;
     }
+
+    @media (max-width: 600px) {
+      .app-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .btn {
+        width: auto;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <h1>My Apps & Privacy Policies</h1>
@@ -69,6 +89,26 @@
   <div class="app-card">
     <span class="app-title">PDF Maker App</span>
     <a class="btn" href="./pdf-maker/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">Image Compressor & Resizer</span>
+    <a class="btn" href="./image-compressor/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">QR & Barcode Toolkit</span>
+    <a class="btn" href="./qr-barcode-toolkit/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">AI Photo Enhancer</span>
+    <a class="btn" href="./ai-photo-enhancer/">View Page</a>
+  </div>
+
+  <div class="app-card">
+    <span class="app-title">AI Background Remover</span>
+    <a class="btn" href="./ai-background-remover/">View Page</a>
   </div>
 
 </body>
