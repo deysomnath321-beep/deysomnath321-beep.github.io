@@ -29,27 +29,40 @@
       margin-bottom: 30px;
     }
 
+    h2 {
+      color: #1a73e8;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 8px;
+    }
+
     .app-card {
       background: #f8f9fa;
       border: 1px solid #e0e0e0;
       border-radius: 8px;
-      padding: 15px 20px;
+      padding: 18px 20px;
       margin-bottom: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
     }
 
     .app-title {
       font-size: 18px;
       font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .app-status {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+      display: block;
     }
 
     .buttons {
       display: flex;
-      gap: 8px;
       flex-wrap: wrap;
+      gap: 8px;
     }
 
     .btn {
@@ -61,59 +74,85 @@
       border-radius: 5px;
       font-size: 14px;
       font-weight: bold;
-      white-space: nowrap;
     }
 
     .btn:hover {
       background-color: #1557b0;
     }
 
-    .privacy-btn {
-      background-color: #34a853;
+    .btn-secondary {
+      background-color: #555;
     }
 
-    .privacy-btn:hover {
+    .btn-secondary:hover {
+      background-color: #333;
+    }
+
+    .btn-testing {
       background-color: #188038;
     }
 
-    .upcoming {
-      background-color: #fff8e1;
-      border-color: #f1c40f;
+    .btn-testing:hover {
+      background-color: #137333;
     }
 
-    .upcoming-badge {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 3px 8px;
-      background-color: #f1c40f;
-      color: #333;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: bold;
-      vertical-align: middle;
-    }
-
-    .disabled-btn {
-      background-color: #999;
+    .btn-coming {
+      background-color: #777;
       cursor: default;
     }
 
-    .disabled-btn:hover {
-      background-color: #999;
+    .testing-info {
+      background: #f1f8e9;
+      border: 1px solid #c5e1a5;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+    .testing-info strong {
+      color: #188038;
+    }
+
+    .group-links {
+      margin-top: 10px;
+    }
+
+    .group-links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 6px;
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .group-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
     }
 
     @media (max-width: 600px) {
       body {
         margin: 25px auto;
+        padding: 0 15px;
       }
 
       .app-card {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 15px;
       }
 
       .buttons {
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       .btn {
@@ -128,15 +167,23 @@
   <h1>My Apps & Privacy Policies</h1>
 
   <p class="subtitle">
-    Explore my Android apps and their privacy policies.
+    Explore my Android apps, download published apps, and access privacy policies.
   </p>
 
 
+  <!-- PUBLISHED APPS -->
+
+  <h2>Published Apps</h2>
+
+
   <!-- 1. MY CALCULATOR -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      MY CALCULATOR
+    <span class="app-title">MY CALCULATOR</span>
+
+    <span class="app-status">
+      Published on Google Play
     </span>
 
     <div class="buttons">
@@ -150,7 +197,7 @@
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-secondary"
         href="./calculator/"
         target="_blank"
         rel="noopener noreferrer">
@@ -163,10 +210,13 @@
 
 
   <!-- 2. ALARM -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      ALARM
+    <span class="app-title">ALARM</span>
+
+    <span class="app-status">
+      Published on Google Play
     </span>
 
     <div class="buttons">
@@ -180,7 +230,7 @@
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-secondary"
         href="./alarm/"
         target="_blank"
         rel="noopener noreferrer">
@@ -193,10 +243,13 @@
 
 
   <!-- 3. HEALTH DIRECTORY -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      HEALTH DIRECTORY
+    <span class="app-title">HEALTH DIRECTORY</span>
+
+    <span class="app-status">
+      Published on Google Play
     </span>
 
     <div class="buttons">
@@ -210,7 +263,7 @@
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-secondary"
         href="./health-directory/"
         target="_blank"
         rel="noopener noreferrer">
@@ -223,10 +276,13 @@
 
 
   <!-- 4. PDF MAKER -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      PDF Maker
+    <span class="app-title">PDF Maker</span>
+
+    <span class="app-status">
+      Published on Google Play
     </span>
 
     <div class="buttons">
@@ -240,7 +296,7 @@
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-secondary"
         href="./pdf-maker/"
         target="_blank"
         rel="noopener noreferrer">
@@ -252,25 +308,71 @@
   </div>
 
 
+  <!-- CLOSED TESTING APPS -->
+
+  <h2>Apps in Closed Testing</h2>
+
+  <div class="testing-info">
+
+    <strong>Closed Testing</strong>
+
+    <p>
+      These apps are currently being tested and are not yet publicly
+      available on Google Play. To participate in testing, join a
+      testing group using the links below.
+    </p>
+
+    <div class="group-links">
+
+      <a
+        href="https://groups.google.com/g/somnath1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Join Somnath Tester Group
+      </a>
+
+      <a
+        href="https://groups.google.com/g/closetester1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Join Close Tester Group
+      </a>
+
+    </div>
+
+  </div>
+
+
   <!-- 5. IMAGE COMPRESSOR & RESIZER -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      Image Compressor &amp; Resizer
+    <span class="app-title">Image Compressor & Resizer</span>
+
+    <span class="app-status">
+      Currently in Closed Testing
     </span>
 
     <div class="buttons">
 
       <a
-        class="btn"
-        href="https://play.google.com/store/apps/details?id=com.somnath.imagecompressor"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/somnath1"
         target="_blank"
         rel="noopener noreferrer">
-        Google Play
+        Join Testing
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/closetester1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Close Tester
+      </a>
+
+      <a
+        class="btn btn-secondary"
         href="./image-compressor/"
         target="_blank"
         rel="noopener noreferrer">
@@ -283,24 +385,35 @@
 
 
   <!-- 6. AI BACKGROUND REMOVER -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      AI Background Remover
+    <span class="app-title">AI Background Remover</span>
+
+    <span class="app-status">
+      Currently in Closed Testing
     </span>
 
     <div class="buttons">
 
       <a
-        class="btn"
-        href="https://play.google.com/store/apps/details?id=com.somnath.backgroundremover"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/somnath1"
         target="_blank"
         rel="noopener noreferrer">
-        Google Play
+        Join Testing
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/closetester1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Close Tester
+      </a>
+
+      <a
+        class="btn btn-secondary"
         href="./ai-background-remover/"
         target="_blank"
         rel="noopener noreferrer">
@@ -313,24 +426,35 @@
 
 
   <!-- 7. QR & BARCODE TOOLKIT -->
+
   <div class="app-card">
 
-    <span class="app-title">
-      QR &amp; Barcode Toolkit
+    <span class="app-title">QR & Barcode Toolkit</span>
+
+    <span class="app-status">
+      Currently in Closed Testing
     </span>
 
     <div class="buttons">
 
       <a
-        class="btn"
-        href="https://play.google.com/store/apps/details?id=com.somnath.qrbarcodetoolkit"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/somnath1"
         target="_blank"
         rel="noopener noreferrer">
-        Google Play
+        Join Testing
       </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/closetester1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Close Tester
+      </a>
+
+      <a
+        class="btn btn-secondary"
         href="./qr-barcode-toolkit/"
         target="_blank"
         rel="noopener noreferrer">
@@ -342,22 +466,36 @@
   </div>
 
 
-  <!-- 8. UPCOMING APP -->
-  <div class="app-card upcoming">
+  <!-- 8. AI PHOTO ENHANCER -->
 
-    <span class="app-title">
-      AI Photo Enhancer
-      <span class="upcoming-badge">UPCOMING</span>
+  <div class="app-card">
+
+    <span class="app-title">AI Photo Enhancer</span>
+
+    <span class="app-status">
+      Currently in Closed Testing
     </span>
 
     <div class="buttons">
 
-      <span class="btn disabled-btn">
-        Coming Soon
-      </span>
+      <a
+        class="btn btn-testing"
+        href="https://groups.google.com/g/somnath1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Join Testing
+      </a>
 
       <a
-        class="btn privacy-btn"
+        class="btn btn-testing"
+        href="https://groups.google.com/g/closetester1"
+        target="_blank"
+        rel="noopener noreferrer">
+        Close Tester
+      </a>
+
+      <a
+        class="btn btn-secondary"
         href="./ai-photo-enhancer/"
         target="_blank"
         rel="noopener noreferrer">
@@ -368,6 +506,47 @@
 
   </div>
 
+
+  <!-- UPCOMING APPS -->
+
+  <h2>Upcoming Apps</h2>
+
+
+  <!-- 9. UPCOMING -->
+
+  <div class="app-card">
+
+    <span class="app-title">Upcoming App</span>
+
+    <span class="app-status">
+      Coming Soon
+    </span>
+
+    <div class="buttons">
+
+      <span class="btn btn-coming">
+        Coming Soon
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+
+    <p>
+      © 2026 My Apps & Privacy Policies
+    </p>
+
+    <p>
+      Google Play links are provided for published apps.
+      Testing groups are provided for apps currently in closed testing.
+    </p>
+
+  </div>
 
 </body>
 </html>
